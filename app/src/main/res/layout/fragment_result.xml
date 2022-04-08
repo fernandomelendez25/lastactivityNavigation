@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ResultFragment">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.melendez.lastactivitynavigation.MainViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.name}"
+            tools:text="Nombre"/>
+
+        <TextView
+            android:id="@+id/lastname_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.lastName}"
+            tools:text="Apellido"/>
+
+    </LinearLayout>
+</layout>
